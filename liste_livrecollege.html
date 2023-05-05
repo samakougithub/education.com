@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Resto</title>
+<body>
+<header>
+    <a href="#" class="logo"><span>Wallu </span>éducation</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+</header>
+ <section class="temoignage" id="temoignage">
+    <div class="titre blanc">
+        <h2 class="titre-texte">Liste de nos <span>livres</span></h2>
+        <p>consulter le livre de votre choix. </p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/paper-1100254_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Ce document est un livre(oeuvre) intitulé pére riche pére pauvre.</p>
+               <h3><a href="./cours_lycee/Pere riche pere pauvre ( PDFDrive ).pdf" download="openingdonn">Télecharger</a></h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/book-5178205_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Ce document vous permet de maitriser les bases de la conjugaison francaise en moins d'une heure .</p>
+                <h3><a href="./cours_lycee/Maitrisez_les_bases_de_la_conjugaison_francaise_Christelle_Molon.pdf" download="openingdonn">Télecharger</a></h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/book-863418_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>je me debrouille en anglais.</p>
+               <h3><a href="./cours_lycee/Je Me Debrouille En Anglais_121124.pdf" download="openingdonn">Télecharger</a></h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/library-1147815_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Ce document est un fascicule de conjugaison en spagnol.</p>
+                <h3><a href="./cours_lycee/fascicule_2.pdf" download="openingdonn">Télecharger</a></h3>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/apple-256263_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Cours de mathématique classe de Troisième .</p>
+                <h3><a href="./science/Cours de Mathématiques classe de Troisième ( PDFDrive ).pdf" download="openingdonn">Télecharger</a></h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/girl-3421489_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Mariama Bâ, Une si longue lettre .</p>
+                <h3><a href="./litterature/Mariama Bâ, Une si longue lettre. ( PDFDrive ).pdf" download="openingdonn">Télecharger</a></h3>
+            </div>
+        </div>
+    </div>
+ </section>
+ 
+ <div class="copyright">
+    <p>mise en place 2023 <a href="mailto:samakoubalde123@gmail.com">par balde samakou</a> samakoubalde123@gmail.com . Tous droits reservé</p>
+</div>
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
+</html>
